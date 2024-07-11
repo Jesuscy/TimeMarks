@@ -1,10 +1,10 @@
-const mongoose = require('mongoose')
-const {groupSchema} = require('./group.model')
-const activitySchema = mongoose.Schema({
+const mongoose = require('mongoose');
+const { groupSchema } = require('./group.model');
 
-    activityName:{
+const activitySchema = new mongoose.Schema({
+    activityName: {
         type: String,
-        required: true,   
+        required: true,
     },
     startDate: {
         type: Date,
@@ -14,11 +14,10 @@ const activitySchema = mongoose.Schema({
         type: Date,
         required: true
     },
-    activityUsers:[{type: mongoose.Schema.Types.ObjectId, ref:'User'}],
-    
-    activityGroup: groupSchema 
-    
-})
+    activityUsers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+    activityGroup: groupSchema
+});
 
-const Activity = mongoose.model('Activity', activitySchema, 'activitys')
-module.exports = {Activity, activitySchema}
+const Activity = mongoose.model('Activity', activitySchema, 'activities');
+
+module.exports = { activitySchema, Activity };
