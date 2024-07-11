@@ -1,11 +1,24 @@
 {
-  "name": "backend",
+  "name": "timemarks",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesuscy/TimeMarks.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jesuscy/TimeMarks/issues"
+  },
+  "homepage": "https://github.com/Jesuscy/TimeMarks#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "nodemon": "^3.1.4"
+  }
 }
