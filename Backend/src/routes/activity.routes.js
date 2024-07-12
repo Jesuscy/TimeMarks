@@ -7,12 +7,12 @@ const {
     deleteActivity
 } = require('../controllers/activity.controller');
 
-const router = express.Router();
+const activityRouter = express.Router();
 
-router.get('/activities', getActivities);
-router.post('/activities', createActivity);
-router.get('/activities/:id', getActivityById);
-router.put('/activities/:id', updateActivity);
-router.delete('/activities/:id', deleteActivity);
+activityRouter.get('/activities', getActivities);
+activityRouter.post('/activities', createActivity);
+activityRouter.get('/activities/:id', getActivityById);
+activityRouter.put('/activities/:id', updateActivity);
+activityRouter.delete('/activities/:id', deleteActivity);
 
-module.exports = router;
+module.exports = activityRouter;

@@ -7,12 +7,12 @@ const {
     deleteUser
 } = require('../controllers/user.controller');
 
-const router = express.Router();
+const userRouter = express.Router();
 
-router.get('/users', getUsers);
-router.post('/users', createUser);
-router.get('/users/:id', getUserById);
-router.put('/users/:id', updateUser);
-router.delete('/users/:id', deleteUser);
+userRouter.get('/users', getUsers);
+userRouter.post('/users', createUser);
+userRouter.get('/users/:id', getUserById);
+userRouter.put('/users/:id', updateUser);
+userRouter.delete('/users/:id', deleteUser);
 
-module.exports = router;
+module.exports = userRouter;
