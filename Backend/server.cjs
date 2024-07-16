@@ -19,7 +19,7 @@ app.use((req, res, next) => {
   next();
 });
 //Routers
-app.use("/activitys",activityRouter);
+app.use("/activities",activityRouter);
 app.use("/groups",groupRouter);
 app.use("/users",userRouter);
 

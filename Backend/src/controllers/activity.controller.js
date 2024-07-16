@@ -14,6 +14,19 @@ const getActivities = async (req, res) => {
     }
 };
 
+const getUserActivities = async (req,res) =>{
+    const {userId} = req.body
+    try{
+        const userActivities = await Activity.find({activityUsers: userId}).populate('activityUsers')
+        if(!userActivities || userActivities.length === 0){
+            return res.status(200).json({message:'No activites found.'})
+        }
+        return res.status(200).json(userActivities)
+    }
+    catch(error){
+        return res.status(500).json({message: HTTPSTATUSCODE[500]})
+    }
+}
 // Crear una nueva actividad
 const createActivity = async (req, res) => {
     try {
