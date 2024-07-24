@@ -2,10 +2,10 @@ import React from 'react'
 import '../index.css'
 import { Header } from './Header'
 import { UserPanel } from './UserPanel'
-import { ActivityList } from '../common/ActivityList'
-import { Activity } from '../common/Activity'
+import { ActivityList } from '../common/Activity/ActivityList'
+import { Activity } from '../common/Activity/Activity'
 import { Divider } from '@nextui-org/react'
-import { ActivityForm } from '../common/ActivityForm'
+import { ActivityForm } from '../common/Activity/ActivityForm'
 export const Home = () => {
   return (
     <>

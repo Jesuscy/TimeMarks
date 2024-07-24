@@ -1,7 +1,7 @@
 import React from 'react'
-import add from '../../public/img/add.png'
-import del from '../../public/img/delete.png'
-import settings from '../../public/img/settings.png'
+import add from '../../../public/img/add.png'
+import del from '../../../public/img/delete.png'
+import settings from '../../../public/img/settings.png'
 
 export const ActivityActions = () => {
   return (
