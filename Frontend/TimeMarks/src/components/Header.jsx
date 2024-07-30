@@ -18,7 +18,7 @@ export const Header = () => {
           <p>Contact</p>
         </div>
 
-        <div className="w-1/6 ml-20">
+        <div className="w-1/6 ml-28">
        <Button color="primary" variant="flat">
         Log In
        </Button>  

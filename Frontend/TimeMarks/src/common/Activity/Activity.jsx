@@ -34,7 +34,6 @@ export const Activity = () => {
     <div className='w-full flex flex-col justify-end'>
     <AssigmentActions/>
     <Divider orientation='horizontal'/>
-    <AssignmentDetail/>
     </div>
     </div>
    

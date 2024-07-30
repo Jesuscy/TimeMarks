@@ -1,6 +1,7 @@
 import { Divider } from '@nextui-org/react'
 import React from 'react'
 import { ActivityUserCard } from './ActivityUserCard'
+import { UserCard } from '../User/UserCard'
 
 export const ActivityUsersList = () => {
   return (
@@ -12,7 +13,6 @@ export const ActivityUsersList = () => {
       <Divider className='w-3/4 ml-3'/>
       <ActivityUserCard/>
       <ActivityUserCard/>
-
 
 
     </div>
