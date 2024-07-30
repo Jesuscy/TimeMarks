@@ -3,6 +3,8 @@ import {RangeCalendar} from "@nextui-org/calendar";
 import { AssignmentCard } from '../Assignment/AssignmentCard';
 import { ActivityActions } from './ActivityActions';
 import { AssigmentActions } from '../Assignment/AssigmentActions';
+import { Divider } from '@nextui-org/react';
+import { AssignmentDetail } from '../Assignment/AssignmentDetail';
 
 export const Activity = () => {
   return (
@@ -29,9 +31,10 @@ export const Activity = () => {
    
     </div>
 
-    <div className='w-full flex justify-end'>
+    <div className='w-full flex flex-col justify-end'>
     <AssigmentActions/>
-
+    <Divider orientation='horizontal'/>
+    <AssignmentDetail/>
     </div>
     </div>
    

@@ -5,7 +5,7 @@ import settings from '../../../public/img/settings.png'
 
 export const AssigmentActions = () => {
   return (
-    <div className='w-1/3 flex flex-row mr-10 '>
+    <div className='w-full justify-end flex mr-10 '>
         <div className='w-1/3'>
         <button className='bg-slate-300 border-2 border-gray-400 m-2 p-1 rounded-md hover:bg-slate-400'>
             <img src={add}/>

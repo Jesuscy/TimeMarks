@@ -6,6 +6,7 @@ import { ActivityList } from '../common/Activity/ActivityList'
 import { Activity } from '../common/Activity/Activity'
 import { Divider } from '@nextui-org/react'
 import { ActivityForm } from '../common/Activity/ActivityForm'
+import { ActivityPanel } from '../common/Activity/ActivityPanel'
 export const Home = () => {
   return (
     <>
@@ -18,7 +19,7 @@ export const Home = () => {
         <ActivityForm/>
         </div>
         <div className='w-1/4 flex justify-end'>
-        <UserPanel/>
+        <ActivityPanel/>
 
         </div>
         </div>
