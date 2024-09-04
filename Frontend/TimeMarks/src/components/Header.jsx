@@ -19,12 +19,12 @@ export const Header = () => {
         </div>
 
         <div className="w-1/6 ml-28">
-       <Button color="primary" variant="solid">
+       <Button color="primary"  radius="full" variant="solid">
         Log In
        </Button>  
        </div>
        <div className="w-1/6">
-       <Button color="primary" variant="solid">
+       <Button color="primary" radius="full" variant="solid">
         Sing Up
        </Button>  
        </div>

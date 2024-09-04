@@ -5,8 +5,12 @@ import { ActivityActions } from './ActivityActions';
 import { AssigmentActions } from '../Assignment/AssigmentActions';
 import { Divider } from '@nextui-org/react';
 import { AssignmentDetail } from '../Assignment/AssignmentDetail';
+import { ActivityPanel } from './ActivityPanel';
+import { ActivityCreationPanel } from './ActivityCreationPanel';
 
-export const Activity = () => {
+export const Activity = ({setShowCreationPanel}) => {
+  
+
   return (
     <div className='w-full flex flex-col font-rubik'>
     <div className='w-full flex flex-row'>
@@ -32,9 +36,9 @@ export const Activity = () => {
     </div>
 
     <div className='w-full flex flex-col justify-end'>
-    <AssigmentActions/>
-    <Divider orientation='horizontal'/>
+    <AssigmentActions setShowCreationPanel={setShowCreationPanel}/>
     </div>
+   
     </div>
    
   )

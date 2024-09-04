@@ -1,7 +1,7 @@
 import { Button, Divider, Input, RangeCalendar, Textarea } from '@nextui-org/react'
 import React from 'react'
 
-export const ActivityCreationPanel = () => {
+export const ActivityCreationPanel = ({setShowCreationPanel}) => {
   return (
     <div className='flex flex-col w-11/12 m-auto rounded-md bg-gray-100 border-2 border-gray-300 font-rubik'>
       <div className='w-full font-normal text-lg text-center m-2'>New Assignment:</div>
@@ -42,13 +42,13 @@ export const ActivityCreationPanel = () => {
 
           <div className='w-full flex flex-row m-auto'>
             <div className="w-1/2 m-auto justify-center">
-            <Button radius="full">
+            <Button radius="full" color='default'>
               Add
             </Button>
             </div>
          
             <div className="w-1/2 m-auto justify-center">
-            <Button radius="full" color='danger'>
+            <Button radius="full" color='danger' onClick={setShowCreationPanel}>
               Cancel
             </Button>
             </div>
