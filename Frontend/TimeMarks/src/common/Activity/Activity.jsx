@@ -8,7 +8,7 @@ import { AssignmentDetail } from '../Assignment/AssignmentDetail';
 import { ActivityPanel } from './ActivityPanel';
 import { ActivityCreationPanel } from './ActivityCreationPanel';
 
-export const Activity = ({setShowCreationPanel}) => {
+export const Activity = ({setShowCreationPanel, setSelectedAssignment}) => {
   
 
   return (
@@ -24,13 +24,13 @@ export const Activity = ({setShowCreationPanel}) => {
       />
     </div>
     <div className='w-1/2 h-64 border-2 rounded-lg bg-white overflow-y-scroll m-5 p-2'> 
-     <AssignmentCard/>
-     <AssignmentCard/>
-     <AssignmentCard/>
-     <AssignmentCard/>
-     <AssignmentCard/>
-     <AssignmentCard/>
-     <AssignmentCard/>
+     <AssignmentCard />
+     <AssignmentCard />
+     <AssignmentCard />
+     <AssignmentCard />
+     <AssignmentCard />
+     <AssignmentCard />
+     <AssignmentCard />
     </div>
    
     </div>
